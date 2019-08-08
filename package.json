@@ -1,0 +1,10 @@
+{
+  "name": "pixel-clone",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.12.2",
+    "recordrtc": "3.0.0",
+    "sass": "^1.21.0"
+  }
+}

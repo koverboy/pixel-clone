@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="body">
+<div class="eventsPull">
+    <button id="clear"> clear</button>
+    <button id="save"> save</button>
+    <button id="animation">animate</button>
+    <p id="eventPull__FPS">FPS</p><input id="FPS" type="range" max="1000" value="500">
+
+    <p id="eventPull__Size">Size of pen</p><input id="size" type="range" max="100" min="10" value="500">
+    <button id="shape">change Draw mode</button>
+    <label for="color"></label><input id="color" type="color" class="eventsPull__color" value="blue">
+    <button id="record">Strart Record</button>
+
+</div>
+<div class="body__Center">
+    <script src="https://cdn.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="https://cdn.webrtc-experiment.com/screenshot.js"></script>
+    <script src="https://github.com/SMUsamaShah/CanvasRecorder/blob/master/CanvasRecorder.js"></script>
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC/CanvasRecorder.js"></script>
+    <canvas id="canvas"></canvas>
+<div class="body__Center_FrameInput" id="FrameInput"><p>Remove frame here to add</p></div>
+    <div class="body__Center_RightTools">
+        <p>Canvas Size</p><input id="canvasSize" type="range" max="500" value="500">
+        <div class="body__Center_RightTools_Shape" id="Shapeblock" align="center"></div>
+    </div>
+</div>
+<div class="body__FrameBox" id="framepull"></div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
