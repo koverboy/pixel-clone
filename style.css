@@ -3,24 +3,19 @@
   display: block;
   border: solid;
 }
-
 #shape {
   width: 200px;
 }
-
 #size {
   height: 50px;
 }
-
 #FPS {
   height: 50px;
 }
-
 video {
   margin: 0 10px 0 0;
   width: calc(50% - 7px);
 }
-
 .eventsPull {
   min-width: 640px;
   flex-wrap: wrap;
@@ -28,91 +23,61 @@ video {
   justify-content: space-around;
   height: 100px;
   border: black solid;
-
-  label {
-
-
-  }
-
-  &__color {
-
-    display: block;
-    width: 130px;
-    height: 32px;
-    border: none;
-  }
-
-
 }
-
-
+.eventsPull__color {
+  display: block;
+  width: 130px;
+  height: 32px;
+  border: none;
+}
 .body {
-
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
-
-  &__FrameBox {
-    height: 400px;
-    width: 100%;
-    border: black solid;
-    flex-wrap: nowrap;
-    padding: 20px 0 20px 0;
-
-    img {
-      position: relative;
-      left: inherit;
-      top: inherit;
-      border: black solid;
-      margin: 20px 20px 10px 0;
-      height: 100px;
-      width: auto;
-      transition: margin-left 4s ease-in-out 10s;
-      animation-duration: 1s;
-      animation-name: slidein;
-
-    }
-  }
-
-  &__Center {
-    display: flex;
-
-    &_FrameInput {
-      height: 200px;
-      width: 200px;
-      min-height: 200px;
-      min-width: 200px;
-      border: black solid;
-      margin: 20px;
-
-    }
-
-
-    &_RightTools {
-
-
-      &_Shape {
-        padding-top: 25px;
-        border: black solid;
-        height: 50px;
-        width: 50px;
-
-      }
-
-    }
-  }
 }
-
+.body__FrameBox {
+  height: 400px;
+  width: 100%;
+  border: black solid;
+  flex-wrap: nowrap;
+  padding: 20px 0 20px 0;
+}
+.body__FrameBox img {
+  position: relative;
+  left: inherit;
+  top: inherit;
+  border: black solid;
+  margin: 20px 20px 10px 0;
+  height: 100px;
+  width: auto;
+  transition: margin-left 4s ease-in-out 10s;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+.body__Center {
+  display: flex;
+}
+.body__Center_FrameInput {
+  height: 200px;
+  width: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  border: black solid;
+  margin: 20px;
+}
+.body__Center_RightTools_Shape {
+  padding-top: 25px;
+  border: black solid;
+  height: 50px;
+  width: 50px;
+}
 @keyframes slidein {
   from {
     margin-left: 100%;
     position: absolute;
-  }
-
+ }
   to {
     margin-left: 0;
-  }
+ }
 }
-
-
 button {
   height: 40px;
   width: 100px;
@@ -121,17 +86,15 @@ button {
   font-weight: 700;
   text-decoration: none;
   user-select: none;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   outline: none;
   border: 2px solid;
   border-radius: 1px;
   transition: 0.2s;
 }
-
 button:hover {
   background: red;
 }
-
 button:active {
   background: white;
 }
